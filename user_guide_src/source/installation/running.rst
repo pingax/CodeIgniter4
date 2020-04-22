@@ -55,14 +55,14 @@ all unix-type systems (include OS X) will typically keep the file at **/etc/host
 
 The local development server can be customized with three command line options:
 
-- You can use the ``--host`` CLI option to specify a different host to run the application at::
+- You can use the ``-host`` CLI option to specify a different host to run the application at::
 
-    php spark serve --host=example.dev
+    php spark serve -host example.dev
 
 - By default, the server runs on port 8080 but you might have more than one site running, or already have
-  another application using that port. You can use the ``--port`` CLI option to specify a different one::
+  another application using that port. You can use the ``-port`` CLI option to specify a different one::
 
-    php spark serve --port=8081
+    php spark serve -port 8081
 
 - You can also specify a specific version of PHP to use, with the ``--php`` CLI option, with its value
   set to the path of the PHP executable you want to use::
